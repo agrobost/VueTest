@@ -1,8 +1,15 @@
-export interface Todo {
-  id: number;
-  content: string;
+export type Nullable<T> = T | null;
+
+export interface PrizeData {
+  rank: number;
+  label: string;
+  desc: string;
+  imgUrl: string;
+  imgUrlLarge: string;
 }
 
-export interface Meta {
-  totalCount: number;
+export interface PrizesResponse {
+  success: boolean;
+  drawId: string;
+  prizes: PrizeData[];
 }
