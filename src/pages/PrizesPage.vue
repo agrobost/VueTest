@@ -16,7 +16,7 @@
 import { defineComponent } from 'vue'
 import { useStore } from '../store/main'
 import { useQuasar } from 'quasar'
-import PrizeItem from '@/components/PrizeItem.vue'
+import PrizeItem from '../components/PrizeItem.vue'
 
 export default defineComponent({
   name: 'PrizesPage',
